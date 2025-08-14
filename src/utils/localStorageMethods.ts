@@ -1,7 +1,9 @@
 export const readFromLocalStorage = (key: any) => {
   try {
     const jsonData: any = localStorage.getItem(key);
-    return jsonData !== 'undefined' && jsonData !== undefined ? JSON.parse(jsonData) : null;
+    return jsonData !== 'undefined' && jsonData !== undefined
+      ? JSON.parse(jsonData)
+      : null;
   } catch (error) {
     console.error('Error reading data from Local Storage:', error);
     return null;

@@ -1,13 +1,10 @@
-import type { PaletteColor, PaletteColorOptions } from "@mui/material/styles";
+import type { PaletteColor, PaletteColorOptions } from '@mui/material/styles';
 
 // Extend the default MUI Palette types to include standalone colors
 interface TypeBorder {
   main: string;
-  secondary: string;
-  primary: string;
-  neutral: string;
-  // light: string;
-  // dark: string;
+  light: string;
+  focus: string;
 }
 interface TypeHover {
   main: string;
@@ -15,28 +12,35 @@ interface TypeHover {
 }
 interface TypeIcon {
   default: string;
-  muted: string;
-  light: string;
+  primary: string;
+  secondary: string;
 }
 
-declare module "@mui/material/styles" {
+declare module '@mui/material/styles' {
   interface TypeBackground {
     input?: string;
-    label?: string;
     secondary?: string;
-    primaryLight?: string;
+    primary: string;
+    accent: string;
   }
 
   interface TypeText {
-   // darkGray: string;
+    hint: string;
   }
 
   interface TypeHeading {
     primary: string;
     secondary: string;
-    base: string;
+    accent: string;
   }
 
+  interface TypeGrade {
+    excellent: string;
+    good: string;
+    average: string;
+    poor: string;
+    fail: string;
+  }
   interface Palette {
     alert: PaletteColor;
     border: TypeBorder;
@@ -44,6 +48,7 @@ declare module "@mui/material/styles" {
     placeholder: PaletteColor;
     hover: TypeHover;
     heading: TypeHeading;
+    grade: TypeGrade;
   }
 
   interface PaletteOptions {
@@ -53,5 +58,6 @@ declare module "@mui/material/styles" {
     icon?: Partial<TypeIcon>;
     placeholder?: PaletteColorOptions;
     heading?: Partial<TypeHeading>;
+    grade?: Partial<TypeGrade>;
   }
 }

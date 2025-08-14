@@ -1,7 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import App from './App.tsx';
+import './print.css';
 
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
@@ -15,10 +16,10 @@ createRoot(document.getElementById('root')!).render(
     <ThemeContextProvider>
       <BrowserRouter basename="">
         <Provider store={store}>
-            <App />
+          <App />
           <ToastContainer autoClose={3000} />
         </Provider>
       </BrowserRouter>
     </ThemeContextProvider>
-  </StrictMode>,
-)
+  </StrictMode>
+);

@@ -8,9 +8,7 @@ declare global {
 }
 
 // Combine reducers
-const rootReducer = combineReducers({
-
-});
+const rootReducer = combineReducers({});
 
 const store = configureStore({
   reducer: rootReducer,

@@ -1,0 +1,16 @@
+/* print.css */
+@page { size: A4 landscape; margin: 8mm; }
+
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; margin: 0; }
+  .no-print { display: none !important; }
+  .page { page-break-after: always; break-after: page; }
+}
+
+.card-root {
+  /* keep what-you-see-what-prints sizing */
+  width: 297mm;
+  min-height: 210mm;
+  background: #fff;
+  box-sizing: border-box;
+}
