@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import ThemeShowcase from './theme/ThemeShowcase';
 import { routes } from './config/routes';
 import ResultCardPreview from './components/testers/ResultCardPreview';
@@ -8,8 +8,12 @@ import AuthLayout from './layout/AuthLayout';
 import LoginForm from './components/auth/Login';
 import ForgotPasswordForm from './components/auth/ForgotPassword';
 import ResetPasswordForm from './components/auth/ResetPassword';
+import PortalLayout from './layout/PortalLayout';
+import StudentsManagement from './components/portal/Students/StudentsManagement';
 
 function App() {
+  const isAuthed = true; // TODO: replace with real auth state
+
   return (
     <Box sx={{ height: '100%' }}>
       <Routes>
@@ -28,6 +32,37 @@ function App() {
             path={routes.auth.resetPassword}
             element={<ResetPasswordForm />}
           />
+        </Route>
+
+        {/* TODO: Protected Routes */}
+        <Route
+          element={
+            isAuthed ? (
+              <PortalLayout />
+            ) : (
+              <Navigate to={routes.auth.login} replace />
+            )
+          }
+        >
+          <Route
+            index
+            element={<Navigate to={routes.portal.dashboard} replace />}
+          />
+          <Route
+            path={routes.portal.dashboard}
+            element={<div>Dashboard</div>}
+          />
+          <Route
+            path={routes.portal.student}
+            element={<StudentsManagement />}
+          />
+          <Route path={routes.portal.subjects} element={<div>Subjects</div>} />
+          <Route
+            path={routes.portal.monthlyData}
+            element={<div>Monthly Data</div>}
+          />
+          <Route path={routes.portal.reports} element={<div>Reports</div>} />
+          <Route path={routes.portal.settings} element={<div>Settings</div>} />
         </Route>
       </Routes>
     </Box>

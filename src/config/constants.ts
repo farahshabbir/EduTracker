@@ -1,3 +1,18 @@
+import type { Student } from '../components/portal/Students/@types/student.d';
+export const Grades = [
+  'Nursery',
+  'KG',
+  '1',
+  '2',
+  '3',
+  '4',
+  '5',
+  '6',
+  '7',
+  '8',
+  '9',
+  '10',
+];
 export const ResultSampleData = {
   studentInfo: {
     name: 'Qasim',
@@ -147,3 +162,29 @@ export const ResultSampleData = {
       "Excellent Performance Overall. Don't Be Lazy. More Hardwork Makes You More Successful. In sha ALLAH",
   },
 };
+
+// ------ Fake seed data (you’ll replace with API later) ------
+export const StudentsSampleData: Student[] = [
+  {
+    id: 's-001',
+    firstName: 'Ayesha',
+    lastName: 'Khan',
+    fatherName: 'Imran Khan',
+    rollNumber: 'ET-001',
+    grade: '6',
+    phone: '0300-1234567',
+    email: '',
+    subjectsAssigned: ['Math', 'Science'],
+  },
+  {
+    id: 's-002',
+    firstName: 'Ali',
+    lastName: 'Raza',
+    fatherName: 'Muhammad Raza',
+    rollNumber: 'ET-002',
+    grade: '7',
+    phone: '0301-9876543',
+    email: 'ali.raza@example.com',
+    subjectsAssigned: [],
+  },
+];

@@ -25,11 +25,11 @@ const createEducationTrackerTheme = (isDarkMode = false) => {
       // Background colors
       background: {
         default: isDarkMode ? '#121212' : '#ffffff',
-        paper: isDarkMode ? '#1e1e1e' : '#ffffff',
-        primary: isDarkMode ? '#1e1e1e' : '#f8f9fa', // Light background areas
+        paper: isDarkMode ? '#2f2f2f' : '#ffffff',
+        primary: isDarkMode ? '#1e1e1e' : '#f7f7f7', // Light background areas
         secondary: isDarkMode ? '#2d2d2d' : '#f5f5f5', // Card backgrounds
         input: isDarkMode ? '#2d2d2d' : '#ffffff',
-        accent: isDarkMode ? '#822cd3' : '#f3e8ff', // Light purple accent
+        accent: isDarkMode ? '#3a2f44' : '#f3e8ff', // Light purple accent
       },
 
       // Text colors
@@ -89,7 +89,7 @@ const createEducationTrackerTheme = (isDarkMode = false) => {
       },
 
       hover: {
-        main: isDarkMode ? '#822cd3' : '#f3e8ff',
+        main: isDarkMode ? '#5b3480' : '#f3e8ff',
         secondary: isDarkMode ? '#333333' : '#f5f5f5',
       },
 

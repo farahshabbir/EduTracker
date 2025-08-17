@@ -65,27 +65,27 @@ const ThemeShowcase: React.FC = () => {
           Contained
         </Typography>
         <Grid container spacing={2} mt={1}>
-          <Grid item>
+          <Grid>
             <Button variant="contained" color="primary">
               Primary
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button variant="contained" color="primary" disabled>
               Disabled
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button variant="contained" color="primary" size="small">
               Small
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button variant="contained" color="primary" size="large">
               Large
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button
               variant="contained"
               color="primary"
@@ -102,27 +102,27 @@ const ThemeShowcase: React.FC = () => {
           Outlined
         </Typography>
         <Grid container spacing={2} mt={1}>
-          <Grid item>
+          <Grid>
             <Button variant="outlined" color="primary">
               Primary
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button variant="outlined" color="primary" disabled>
               Disabled
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button variant="outlined" color="primary" size="small">
               Small
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button variant="outlined" color="primary" size="large">
               Large
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button
               variant="outlined"
               color="primary"
@@ -139,27 +139,27 @@ const ThemeShowcase: React.FC = () => {
           Text
         </Typography>
         <Grid container spacing={2} mt={1}>
-          <Grid item>
+          <Grid>
             <Button variant="text" color="primary">
               Primary
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button variant="text" color="primary" disabled>
               Disabled
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button variant="text" color="primary" size="small">
               Small
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button variant="text" color="primary" size="large">
               Large
             </Button>
           </Grid>
-          <Grid item>
+          <Grid>
             <Button
               variant="text"
               color="primary"
@@ -244,31 +244,31 @@ const ThemeShowcase: React.FC = () => {
           🏅 Grade Chips
         </Typography>
         <Grid container spacing={1}>
-          <Grid item xs="auto">
+          <Grid size="auto">
             <Chip
               label="Excellent (A)"
               sx={{ bgcolor: 'grade.excellent', color: '#fff' }}
             />
           </Grid>
-          <Grid item xs="auto">
+          <Grid size="auto">
             <Chip
               label="Good (B)"
               sx={{ bgcolor: 'grade.good', color: '#fff' }}
             />
           </Grid>
-          <Grid item xs="auto">
+          <Grid size="auto">
             <Chip
               label="Average (C)"
               sx={{ bgcolor: 'grade.average', color: '#000' }}
             />
           </Grid>
-          <Grid item xs="auto">
+          <Grid size="auto">
             <Chip
               label="Poor (D)"
               sx={{ bgcolor: 'grade.poor', color: '#fff' }}
             />
           </Grid>
-          <Grid item xs="auto">
+          <Grid size="auto">
             <Chip
               label="Fail (F)"
               sx={{ bgcolor: 'grade.fail', color: '#fff' }}

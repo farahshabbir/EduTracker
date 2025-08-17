@@ -5,4 +5,13 @@ export const routes = {
     forgetPassword: '/forget-password',
     resetPassword: '/reset-password',
   },
+
+  portal: {
+    dashboard: '/dashboard',
+    student: '/students',
+    subjects: '/subjects',
+    monthlyData: '/monthly-data',
+    reports: '/reports',
+    settings: '/settings',
+  },
 };

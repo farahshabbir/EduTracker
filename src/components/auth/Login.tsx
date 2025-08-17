@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Box, Button, TextField, Typography, Stack, Link } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { routes } from '../../config/routes';
 
 export default function LoginForm() {
+  const navigate = useNavigate();
   const [values, setValues] = useState({ email: '', password: '' });
 
   return (
@@ -12,6 +13,7 @@ export default function LoginForm() {
       noValidate
       onSubmit={(e) => {
         e.preventDefault();
+        navigate(routes.portal.dashboard);
       }}
     >
       <Stack spacing={2}>
