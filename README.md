@@ -40,7 +40,7 @@ It automatically calculates totals, percentages, and grades, and exports reports
 Displays student details, subject-wise marks, total percentage, and overall grade — matching the exact school format.
 
 > 🖼️ *View the full sample report here:*
-> [📄 Result Card (PDF)](./docs/Result%20Card.pdf)
+> [📄 Result Card (PDF)](https://drive.google.com/file/d/13-6z6M5fflve9kVYXWq343jx50EWJVg9/view?usp=drive_link)
 
 ---
 
@@ -49,7 +49,7 @@ Displays student details, subject-wise marks, total percentage, and overall grad
 **Login → Dashboard → Add Subjects → Add Students → Enter Monthly Marks → Generate PDF Report**
 
 You can explore the full workflow here:
-📘 [Complete User Flow (PDF)](./docs/Education%20Tracker%20-%20Complete%20User%20Flow.pdf)
+📘 [Complete User Flow (PDF)](https://docs.google.com/document/d/1TwctTkTLVmtRS18hxbfoav5VZPoxOlqs_id2U29TsOQ/edit?usp=sharing)
 
 ---
 
