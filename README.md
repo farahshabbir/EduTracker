@@ -1,12 +1,3 @@
-Perfect 👍 since it’s for your **portfolio**, the README should be:
-✅ **Visually appealing**
-✅ **Short and scannable (around 100–120 lines)**
-✅ **Focused on showing your skills and project purpose** — not every technical detail
-
-Here’s an **optimized README** template specifically tailored for your **Education Tracker** project 👇
-
----
-
 # 🎓 Education Tracker – Student Report Management System
 
 A **web-based student report management system** built with the **MERN stack**, designed to automate student performance tracking and generate result cards identical to traditional school reports.
